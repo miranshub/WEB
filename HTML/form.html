@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <h1>Form</h1>
+    <hr>
+    <br>
+
+    <form action="">
+        <p>* represents required field</p>
+        <br>
+        <br>
+        
+        <label for="name">*Name: </label>
+        <input type="text" name="name" id="name" placeholder="Enter Name" required>
+        <!-- <input type="text" name="name" id="name" placeholder="Enter Name" value="miran" required> -->
+        <br>
+        <br>
+        
+        <label for="contact">*Phone No: </label>
+        <input type="number" name="contact" id="contact" placeholder="Enter Phone No" required>
+        <!-- <input type="number" name="Contact" id="contact" placeholder="Enter Phone No" value="8961360259" required> -->
+        <br>
+        <br>
+        
+        <label for="emailid">*Email: </label>
+        <input type="email" name="email" id="emailid" placeholder="Enter Email Id" required>
+        <!-- <input type="email" name="email" id="emailid" placeholder="Enter Email Id" value="mdmiranjawed415@gmail.com" required> -->
+        <br>
+        <br>
+
+        <label for="dob">Date of Birth: </label>
+        <input type="date" name="dob" id="dobid" placeholder="Select Date of Birth">
+        <!-- <input type="date" name="dob" id="dobid" placeholder="Select Date of Birth" value="2003-01-02"> -->
+        <br>
+        <br>
+        
+        
+        <span>Gender: </span>
+        <input type="radio" name="gender" id="genderMale" value="m">
+        <label for="genderMale">Male</label>
+        <input type="radio" name="gender" id="genderFemale" value="f">
+        <label for="genderFemale">Female</label>
+        <input type="radio" name="gender" id="genderRainbow" value="o">
+        <label for="genderRainbow">Other</label>
+        <br>
+        <br>
+
+        <label for="address">Address: </label>
+        <br>
+        <textarea name="address" id="address" cols="30" rows="4" placeholder="Enter Address"></textarea>
+        <!-- <textarea name="address" id="address" cols="30" rows="4" placeholder="Enter Address">295/2J APC Road Kolkata</textarea> -->
+        <br>
+        <br>
+
+        <label for="mode">*Payement Mode: </label>
+        <select name="mode" id="mode" required>
+            <option value="">Select</option>
+            <option value="c">Credit Card</option>
+            <option value="d">Dedit Card</option>
+            <option value="u">UPI</option>
+            <option value="x">Cash on Delivery</option>
+        </select>
+        <br>
+        <br>
+        
+        <span>*Card No: </span>
+        <input type="number" name="card" id="card-no-" placeholder="XXXX-XXXX-XXXX-XXXX" required>
+        <br>
+        <br>
+
+        <label for="cvv">*CVV: </label>
+        <input type="password" name="cvv" id="cvv" placeholder="CVV" required>
+        <br>
+        <br>
+
+        <label for="Product1">Product 1</label>
+        <input type="checkbox" name="Product1" id="Product1">
+        <br>
+
+        <label for="Product2">Product 2</label>
+        <input type="checkbox" name="Product2" id="Product2">
+        <br>
+
+        <label for="Product3">Product 3</label>
+        <input type="checkbox" name="Product3" id="Product3">
+        <br>
+
+        <label for="Product4">Product 4</label>
+        <input type="checkbox" name="Product4" id="Product4">
+        <br>
+        <br>
+
+        <label for="terms">Accept Terms and Conditions</label>
+        <input type="checkbox" name="terms" id="terms">
+        <br>
+        <br>
+
+        <button type="submit">Pay Now</button>
+    </form>
+</body>
+</html>
+
+<!-- 
+http://127.0.0.1:5501/form.html?name=Md+Miran+Jawed&Contact=08961360259&email=mdmiranjawed415%40gmail.com&dob=&address=295%2F2J+APC+Road+Kolkata+700009&mode=d&card=3455&card=2453&card=8644&card=7645&cvv=234&Product=on&Product=on&Product=on&terms=on
+
+http://127.0.0.1:5501/form.html?name=Md+Miran+Jawed&Contact=08961360259&email=mdmiranjawed415%40gmail.com&dob=&address=295%2F2J+APC+Road+Kolkata+700009&mode=d&card=7854142595846321&cvv=234&Product1=on&Product3=on&terms=on
+http://127.0.0.1:5501/form.html?
+
+name = Md Miran Jawed
+contact = 8961360259
+email = mdmiranjawed415@gmail.com
+dob = 
+address = 295/2J APC Road Kolkata 700009
+mode = d
+card = 7854 1425 9584 6321
+cvv = 234
+Product1 = on
+Product3 = on
+terms = on
+-->

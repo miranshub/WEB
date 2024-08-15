@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hello</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        a {
+            z-index: 1;
+            text-decoration: none;
+            color: #3395dc;
+        }
+
+        a:hover {
+            transition: all ease .3s;
+            font-weight: 600;
+            outline: #000 auto;
+            transform: scale(1.3);
+            color: #b335e9;
+            transition: all cubic-bezier(0.68, -0.55, 0.27, 1.55) 0.3;
+            transform: scale(1.3);
+        }
+
+
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            height: 550vh;
+            width: 150vw;
+        }
+
+        #outDiv {
+            height: 50vh;
+            width: 50vw;
+            background-color: #2096ab80;
+
+            display: flex;
+            position: absolute;
+            top: 50%;
+        }
+
+        .in {
+            height: 50px;
+            width: 50px;
+
+        }
+
+        #sta {
+            background-color: #3bd44d;
+            position: static;
+        }
+
+        #abs {
+            background-color: #34dc99;
+            position: absolute;
+            left: 70px;
+            top: 75px;
+            height: 50%;
+        }
+
+        #fix {
+            background-color: #baf159;
+            position: fixed;
+            top: 5%;
+            left: 20%;
+            border: 2px solid red;
+            border-radius: 25px;
+            /* box-sizing: content-box; border outside the content*/
+            box-sizing: border-box;
+            height: 100%;
+            /*height as per window*/
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #fix:hover {
+            color: white;
+            font-weight: 600;
+            border-color: #000;
+            background-color: red;
+            transform: translate(0, 20%) scale(1.1);
+            /* transition: transform cubic-bezier(1, 0.03, 0.62, 0.99) .3s, scale ease .3s; */
+            transition: transform linear(0 0%, 0.22 2.1%, 0.86 6.5%, 1.11 8.6%, 1.3 10.7%, 1.35 11.8%, 1.37 12.9%, 1.37 13.7%, 1.36 14.5%, 1.32 16.2%, 1.03 21.8%, 0.94 24%, 0.89 25.9%, 0.88 26.85%, 0.87 27.8%, 0.87 29.25%, 0.88 30.7%, 0.91 32.4%, 0.98 36.4%, 1.01 38.3%, 1.04 40.5%, 1.05 42.7%, 1.05 44.1%, 1.04 45.7%, 1 53.3%, 0.99 55.4%, 0.98 57.5%, 0.99 60.7%, 1 68.1%, 1.01 72.2%, 1 86.7%, 1 100%) 1s, scale ease .3s;
+        }
+
+        #sti {
+            background-color: #b335e9;
+            position: sticky;
+            left: 50px;
+            bottom: 200px;
+            top: 50px;
+            right: 500px;
+            height: 100%;
+            /*height as per outer div*/
+        }
+
+        #rel {
+            background-color: #3395dc;
+            position: relative;
+            left: 50%;
+            top: 50%;
+            height: 100%;
+        }
+
+        #nav {
+            height: 2.5em;
+            width: 30%;
+            position: fixed;
+            left: 0;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            border: 2px solid red;
+        }
+
+        #position {
+            position: sticky;
+            top: 200vh;
+            right: 10vw;
+
+            height: 50vh;
+            width: 50vw;
+            border: 2px solid red;
+        }
+
+        .inner {
+            height: 50px;
+            width: 50px;
+            border: 2px solid purple;
+            display: inline-block;
+            overflow: hidden;
+            background-color: red;
+        }
+
+        #stickey {
+            position: sticky;
+        }
+
+        #absolute {
+            position: absolute;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>
+            hello world
+        </h1>
+        <h2>
+            hello world
+        </h2>
+        <h3>
+            hello world
+        </h3>
+        <h4>
+            hello world
+        </h4>
+        <h5>
+            hello world
+        </h5>
+        <h6>
+            hello world
+        </h6>
+    </header>
+    <ol type="a" id="oList">
+        <li>cpp</li>
+        <li>c</li>
+        <li>html</li>
+        <li>css</li>
+        <li>js</li>
+    </ol>
+    <ul id="uList">
+        <li>play</li>
+        <li>clean</li>
+        <li>eat</li>
+        <li>sleep</li>
+        <li>joke</li>
+    </ul>
+    <div id="nav">
+        <a href="#oList">oList</a>
+        <br>
+        <a href="#uList">uList</a>
+        <br>
+        <a href="#">html</a>
+        <br>
+    </div>
+    <table border="4">
+        <thead>
+            <th colspan="3">
+                hello table
+            </th>
+        </thead>
+        <tbody>
+            <tr>
+                <td>c1</td>
+                <td>c2</td>
+                <td>c3</td>
+            </tr>
+            <tr>
+                <td>r1c1</td>
+                <td>r1c2</td>
+                <td>r1c3</td>
+            </tr>
+            <tr>
+                <td>r2c1</td>
+                <td>r2c2</td>
+                <td>r2c3</td>
+            </tr>
+        <tfoot>
+            <tr>
+                <td colspan="3">foot</td>
+            </tr>
+        </tfoot>
+        </tbody>
+    </table>
+    <br><br>
+    <div id="outDiv">
+        <div class="in" id="sta">1sta</div>
+        <div class="in" id="abs">2abs</div>
+        <div class="in" id="fix">3fix</div>
+        <div class="in" id="sti">4sti</div>
+        <div class="in" id="rel">5rel</div>
+    </div>
+
+    <div id="position">
+        <div class="inner" id="static">static</div>
+        <div class="inner" id="absolute">absolute</div>
+        <div class="inner" id="stickey">stickey</div>
+        <div class="inner" id="fixed">fixed</div>
+    </div>
+</body>
+
+</html>
